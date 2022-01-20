@@ -18,3 +18,5 @@ $ npm uninstall express  # 卸载
 $ npm update express     # 更新模块
 
 $ npm search express     # 搜索模块
+
+$ npm list express       # 查看模块版本号
