@@ -20,3 +20,5 @@ $ npm update express     # 更新模块
 $ npm search express     # 搜索模块
 
 $ npm list express       # 查看模块版本号
+
+我已经调整了全局路径  C:\Program Files\nodejs\node_global
