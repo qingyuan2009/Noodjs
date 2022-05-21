@@ -1,0 +1,25 @@
+<html>
+<head/>
+<body>
+    <h1>WebSocket Test</h1>
+    <script>
+
+        //本质上， 把一个http request update 成为 WebSocket protocol
+        const ws = new WebSocket("ws://localhost:8082");
+
+        //cliend side api, trigger when server has open
+        ws.addEventListener("open", () => {
+            console.log("We are connected!");
+
+            //send message to server
+            ws.send("Hi, how's it going");
+        });
+
+        ws.addEventListener("message", event => {
+            console.log(event);
+        });
+
+
+    </script>
+</body>
+</html>
